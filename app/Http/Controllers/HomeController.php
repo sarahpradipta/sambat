@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
+use App\Comment;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $comments = Comment::all();
+        $posts = Post::all();
+        return view('home', compact('posts', 'comments'));
     }
 }
