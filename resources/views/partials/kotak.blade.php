@@ -9,7 +9,7 @@
     <div class="well">
       <p>{{ $post->post }}</p>
       <a href="#" class="btn btn-default btn-sm">
-        <span class="glyphicon glyphicon-thumbs-up"></span> Comments
+        <span class="glyphicon glyphicon-comment"></span> Comments
       </a>
     </div>
   </div>

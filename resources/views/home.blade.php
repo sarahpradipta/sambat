@@ -34,9 +34,9 @@
             <div class="col-sm-12">
               <div class="panel panel-default text-left">
                 <div class="panel-body">
-                  <p contenteditable="true">Status: Feeling Blue</p>
+                  <p contenteditable="true">Silahkan Sambat</p>
                   <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                    <span class="glyphicon glyphicon-plus"></span> Sambat
                   </button>
                 </div>
               </div>
