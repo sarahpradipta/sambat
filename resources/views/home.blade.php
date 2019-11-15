@@ -6,6 +6,7 @@
         <div class="col-sm-3 well">
           <div class="well">
             <p><a href="#">My Profile</a></p>
+
             <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
           </div>
           <div class="well">
@@ -34,10 +35,15 @@
             <div class="col-sm-12">
               <div class="panel panel-default text-left">
                 <div class="panel-body">
-                  <p contenteditable="true">Silahkan Sambat</p>
-                  <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-plus"></span> Sambat
-                  </button>
+                  <form action="{{url('post')}}" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Silahkan Sambat" name="post">
+                    </div>
+                    @csrf
+                      <button type="submit" class="btn btn-default btn-sm">
+                        Sambat
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>

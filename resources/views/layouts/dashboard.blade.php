@@ -45,7 +45,13 @@
           </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+          <li>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ url('/logout') }}">Logout</a></li>
+        </ul>
+          </li>
         </ul>
       </div>
     </div>

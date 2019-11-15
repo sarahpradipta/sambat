@@ -11,11 +11,16 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return redirect()->route('login');
 });
 
-Auth::routes();
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
-// Route::get('/');
+
+//post
+Route::post('/post', 'PostController@store')->name('post.store');
