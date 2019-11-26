@@ -2,14 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
 use Illuminate\Http\Request;
-use App\User;
-use Auth;
-use Illuminate\Support\Facades\Hash;
 
-
-class ProfileController extends Controller
+class MessageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +13,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return view('profile');
+        return view('message');
     }
 
     /**
@@ -61,8 +56,7 @@ class ProfileController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
-        return view('editprofile', compact('user'));
+        //
     }
 
     /**
@@ -74,14 +68,7 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $user = User::find($id);
-      $user->name = $request->name;
-      if ($request->password != null) {
-        $user->password = Hash::make($request->password);
-      }
-      $user->picture = $request->customRadio;
-      $user->save();
-      return redirect()->route('profile');
+        //
     }
 
     /**

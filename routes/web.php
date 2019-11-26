@@ -24,9 +24,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //post
 Route::post('/post', 'PostController@store')->name('post.store');
+Route::get('/post/{id}', 'PostController@show')->name('post.show');
 //profile
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::post('/profile/{id}', 'ProfileController@update')->name('profile.update');
 Route::get('/profile/{id}/edit', 'ProfileController@edit')->name('profile.edit');
 //comment
-Route::post('/comment', 'CommentController@index')->name('comment.store');
+Route::post('/comment/{id}', 'CommentController@store')->name('comment.store');
+//message
+Route::get('/message', 'MessageController@index')->name('message');
