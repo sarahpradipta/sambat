@@ -1,4 +1,3 @@
-
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -27,30 +26,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Logo</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Messages</a></li>
         </ul>
-        <form class="navbar-form navbar-right" role="search">
-          <div class="form-group input-group">
-            <input type="text" class="form-control" placeholder="Search..">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
-          </div>
-        </form>
+
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="{{ url('/logout') }}">Logout</a></li>
-        </ul>
+          <li class="nav-item dropdown">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  {{ Auth::user()->name }} <span class="caret"></span>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a href="{{ url('/logout') }}">Logout</a></li>
+              </ul>
           </li>
         </ul>
       </div>
@@ -60,7 +51,6 @@
   @yield('content')
 
   <footer class="container-fluid text-center">
-    <p>Footer Text</p>
   </footer>
 
   </body>
