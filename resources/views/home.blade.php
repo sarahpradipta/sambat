@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-sm-3 well">
           <div class="well">
-            <p><a href="/profile">My Profile</a></p>
+            <p><a href="{{Route('profile')}}">My Profile</a></p>
             <img src="{{asset('img/'.Auth::user()->picture)}}" class="img-circle" height="65" width="65">
           </div>
         </div>
