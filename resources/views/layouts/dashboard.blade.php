@@ -50,8 +50,8 @@
 
   @yield('content')
 
-  <footer class="container-fluid text-center">
-  </footer>
+  <!-- <footer class="container-fluid text-center">
+  </footer> -->
 
   </body>
   </html>
