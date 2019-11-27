@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-              <img src="{{asset('img/logo.png')}}" class="img-circle" height="100" width="100">
+              <img src="{{asset('img/logo.png')}}" class="img-circle" height="80" width="80">
                 <!-- <a class="navbar-brand" href="{{ url('/') }}">
                     Sambat
                 </a> -->
