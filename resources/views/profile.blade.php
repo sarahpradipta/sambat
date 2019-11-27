@@ -14,7 +14,7 @@
       <h5>{{ Auth::user()->name }}</h5>
       <h5>{{ Auth::user()->email }}</h5>
       <div class="w3-section">
-        <a class="w3-button w3-green" href="/profile/{{Auth::user()->id}}/edit">Edit</a>
+        <a class="w3-button w3-green" href="{{Route('profile')}}/{{Auth::user()->id}}/edit">Edit</a>
       </div>
     </div>
   </div>
